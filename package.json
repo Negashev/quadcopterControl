@@ -46,11 +46,15 @@
     "grunt-shell": "^0.7.0",
     "grunt-vagrant-commands": "^0.0.3",
     "grunt-php": "^0.4.0",
-    "grunt-zip": "^0.15.0"
+    "grunt-zip": "^0.15.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "snyk": true
 }
